@@ -21,7 +21,7 @@
     <meta name="msapplication-tap-highlight" content="no">
 
     <!-- Your app title -->
-    <title>My App</title>
+    <title>Aroma</title>
 
     <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
         http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
@@ -33,27 +33,30 @@
 	<link rel="stylesheet" href="css/font-awesome.css">
 </head>
 
-<body class="mainbody" >
+<body class="mainbody" id='formx'>
     <!-- Status bar overlay for full screen mode (PhoneGap) -->
     <div class="statusbar-overlay"></div>
 
     <!-- Panels overlay-->
     <div class="panel-overlay"></div>
     <!-- Left panel with reveal effect-->
-    <div class="panel panel-left panel-reveal" style="background: white;!important">
+    <nav>
+    <div class="panel panel-left panel-reveal" id="x" style="background: white;!important">
      <div class="list-block" style="margin-top: 0px;">
 		<div class="avtar" style="text-align:center;" >
 		<img src="menu\help.png" width="50%" ></img> 
 		</div>
 			
-         <ul>
-             <li id="settings">
+         <ul >
+             <li id="settings" >
+             	<a href="about.html">
                  <div class="item-content">
                      <div class="item-media"> <i class="icon fa fa-cog"></i></div>
                      <div class="item-inner">
                          <div class="item-title label" style="width: auto;!important">Dashboard</div>
                      </div>
                  </div>
+                 </a>
              </li>
              <li id="favorites" >
                  <div class="item-content">
@@ -74,14 +77,14 @@
          </ul>
      </div>
  </div>
-
+</nav>
 
     <!-- Views -->
     <div class="views">
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
             <!-- Top Navbar-->
-            <div class="navbar">
+            <div class="navbar" >
                 <div class="navbar-inner">
                     <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
                     <div class="center sliding">Awesome App</div>
@@ -97,7 +100,7 @@
             <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
             <div class="pages navbar-through toolbar-through">
                 <!-- Page, "data-page" contains page name -->
-                <div data-page="index" class="page">
+                <div data-page="index" class="page" id="xx">
                     <!-- Scrollable page content -->
                     <div class="page-content">
                         <div class="content-block">

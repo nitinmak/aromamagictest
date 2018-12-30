@@ -16,17 +16,24 @@ $$(document).on('deviceready', function() {
     console.log("Device is ready!");
 	
 });
+   
 
 $$(document).on('click', '#favorites', function (e) {
-     myApp.alert('Show my favorites');
+   
  });
     
  $$(document).on('click', '#about', function (e) {
-     myApp.alert('Show About');
+   
  });
     
  $$(document).on('click', '#settings', function (e) {
-     myApp.alert('Show Settings');
+		//window.location.href = 'about.html'
+	//var url = "/about.html";
+    //$$("#xx").html('<object data='+url+' class="page"/>');
+ 	//$$(".panel panel-left panel-reveal active").class("panel panel-left panel-reveal ");
+ 	//$$('#x').toggleClass('active');
+ 	document.getElementById('x').className = 'panel panel-left panel-reveal';
+ 	document.getElementById('formx').className = 'mainbody';
  });
 // Now we need to run the code that will be executed only for About page.
 
@@ -43,12 +50,12 @@ $$(document).on('pageInit', function (e) {
 
     if (page.name === 'about') {
         // Following code will be executed for page with data-page attribute equal to "about"
-        myApp.alert('Here comes About page');
+        
     }
 })
 
 // Option 2. Using live 'pageInit' event handlers for each page
 $$(document).on('pageInit', '.page[data-page="about"]', function (e) {
     // Following code will be executed for page with data-page attribute equal to "about"
-    myApp.alert('Here comes About page');
+   // myApp.alert('Here comes About page');
 })
