@@ -27,11 +27,6 @@ $$(document).on('click', '#favorites', function (e) {
  });
     
  $$(document).on('click', '#settings', function (e) {
-		//window.location.href = 'about.html'
-	//var url = "/about.html";
-    //$$("#xx").html('<object data='+url+' class="page"/>');
- 	//$$(".panel panel-left panel-reveal active").class("panel panel-left panel-reveal ");
- 	//$$('#x').toggleClass('active');
  	document.getElementById('x').className = 'panel panel-left panel-reveal';
  	document.getElementById('formx').className = 'mainbody';
  });
@@ -40,7 +35,31 @@ $$(document).on('click', '#favorites', function (e) {
 // Option 1. Using page callback for page (for "about" page in this case) (recommended way):
 myApp.onPageInit('about', function (page) {
     // Do something here for "about" page
-
+	var tttoken = "v7nirxu0scv0eistepradr";
+	$$.ajax({
+				 url: "https://unofox.xyz/kishan/10eleven/system_pin_history/",
+				cache: false,
+				headers : {"Access-Control-Allow-Credentials":true,"Access-Control-Allow-Origin":"https://unofox.xyz"},
+				type: "POST",
+				dataType: "json",
+				data: { 'varsete': tttoken ,memberid : '100088'},
+				success: function(response){
+					
+					var htmlx = "";
+					$$.each(response["data"], function (key, value) {
+							htmlx += " <tr>  <td style='color:black;' class='label-cell'>" + value.date + "</td> <td style='color:black;' class='label-cell'>" + value.memberid + "</td> <td style='color:black;' class='numeric-cell'>" + value.pinnumber + "</td></tr> ";
+						});
+					$$("#coins_table").html(htmlx);
+					
+					//console.log(htmlx);	
+					//myApp.alert(' got the response');
+				},
+				error: function(responsex){
+					console.log(responsex);
+					myApp.alert(responsex.status+' got an error');
+					
+				}
+			});
 })
 
 // Option 2. Using one 'pageInit' event handler for all pages:
