@@ -29,56 +29,16 @@
 	
     <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
     <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+
+
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
 </head>
 
 <body class="mainbody" id='formx'>
     <!-- Status bar overlay for full screen mode (PhoneGap) -->
-    <div class="statusbar-overlay"></div>
-
-    <!-- Panels overlay-->
-    <div class="panel-overlay"></div>
-    <!-- Left panel with reveal effect-->
-    <nav>
-    <div class="panel panel-left panel-reveal" id="x" style="background: white;!important">
-     <div class="list-block" style="margin-top: 0px;">
-		<div class="avtar" style="text-align:center;" >
-		<img src="menu\help.png" width="50%" ></img> 
-		</div>
-			
-         <ul >
-             <li id="settings" >
-             	<a href="about.html">
-                 <div class="item-content">
-                     <div class="item-media"> <i class="icon fa fa-cog"></i></div>
-                     <div class="item-inner">
-                         <div class="item-title label" style="width: auto;!important">Dashboard</div>
-                     </div>
-                 </div>
-                 </a>
-             </li>
-             <li id="favorites" >
-                 <div class="item-content">
-                     <div class="item-media"><i class="icon fa fa-star"></i></div>
-                     <div class="item-inner">
-                         <div class="item-title label" style="width: auto;!important">New Registration</div>
-                     </div>
-                 </div>
-             </li>
-             <li id="about">
-                 <div class="item-content">
-                     <div class="item-media"><i class="icon fa fa-info-circle"></i></div>
-                     <div class="item-inner">
-                         <div class="item-title label" style="width: auto;!important">Downline</div>
-                     </div>
-                 </div>
-             </li>
-         </ul>
-     </div>
- </div>
-</nav>
-
+   
     <!-- Views -->
     <div class="views">
         <!-- Your main view, should have "view-main" class -->
@@ -87,7 +47,7 @@
             <div class="navbar" >
                 <div class="navbar-inner">
                     <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
-                    <div class="center sliding">Awesome App</div>
+                    <div class="center sliding">Aroma Magic</div>
                     <div class="right">
                         <!--
                           Right link contains only icon - additional "icon-only" class
@@ -102,9 +62,37 @@
                 <!-- Page, "data-page" contains page name -->
                 <div data-page="index" class="page" id="xx">
                     <!-- Scrollable page content -->
-                    <div class="page-content">
+                    <div class="page-content color-gray">
                         <div class="content-block">
-                            <p>Page content goes here</p>
+                          <div class="app-cover-content">
+
+                            <div class="margin-bottom-60 text-center">
+                            	<img class="text-center" src="img/oroginal_logo.png"  alt="Aroma" width="auto" height="100">
+                            </div>
+							<div class="text-large margin-bottom-15">
+								Aroma Magic Helth
+							</div>
+							<div class="margin-bottom-50">
+								Aromatherapy is the science and art of utilizing naturally extracted aromatic essences from plants.
+							</div>
+							<div class="row footter">
+								<div class="col-50">
+									<a href="#" class="button button-fill color-white black-text text-thiny">Login in</a>
+								</div>
+								<div class="col-50">
+									<a href="#" class="button button-fill color-green text-thiny">Resgiter now</a>
+								</div>
+							</div>
+							<div class="row offset-top-15 margin-bottom-10">
+								<div class="col-100">
+									<a href="#" class="button button-fill color-blue white-text text-thiny">
+										How it Works
+									</a>
+								</div>
+							</div>
+							
+                        </div>
+                    </div>
                             <!-- Link to another page -->
                             <a href="about.html">About app</a>
                         </div>
