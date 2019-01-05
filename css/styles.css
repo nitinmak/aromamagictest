@@ -10,6 +10,441 @@
    See https://github.com/apache/cordova-plugin-statusbar
 */
 
-.mainbody {
-    background: #ffffff;
+
+
+.header-clear{
+	height:65px;
+}
+
+.sidebar-header{
+	width:100%;
+	z-index:11;
+	background-color:#26292b;
+	height:65px;
+	border-bottom:solid 2px #2d3033;	
+}
+
+.sidebar-logo{
+	margin-top:22px;
+	margin-left:20px;
+	background-image:url(../images/logo.png);
+	background-size:80px 18px;
+	display:block;
+	width:80px;
+	height:18px;
+	float:left;
+}
+
+.sidebar-close{
+	font-size:14px;
+	position:absolute;
+	left:210px;
+	color:#5a6166;
+	height:70px;
+	line-height:65px;
+	width:59px;
+	text-align:center;
+	transition:all 200ms ease;
+}
+
+.sidebar-close:hover{
+	color:#FFFFFF;
+}
+
+/*3. Sidebar Menu */
+
+.sidebar-breadcrumb{
+	background-color:#26292b;
+	color:#60656a;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight:800;
+	text-transform:uppercase;
+	font-style:normal;
+	padding-left:20px;
+	padding-right:20px;
+	line-height:45px;
+	border-bottom:solid 1px #26292b;
+	border-top:solid 1px #26262b;
+}
+
+.active-item{
+	background-color:#27ae60!important;	
+}
+
+
+.active-item:hover{
+	background-color:#27ae60!important;	
+}
+
+.sidebar-menu{
+	margin-bottom:0px;
+}
+
+.sidebar-menu li{
+	font-weight:400;
+	list-style:none;
+	line-height:60px;
+	font-size:13px;
+	margin-bottom:0px;
+}
+
+.submenu{
+	max-height:0px;
+	overflow:hidden;
+	margin-bottom:0px;	
+	transition:all 300ms ease;	
+}
+
+.submenu-active{
+	max-height:250px;
+	transition:all 300ms ease;	
+}
+
+.show-submenu .fa-plus{
+	font-size:11px!important;
+	transition:all 300ms ease;
+}
+
+.submenu .fa-last{
+	margin-top:23px;
+}
+
+.show-submenu-active .fa-plus{
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);	
+	transition:all 300ms ease;
+	color:#c0392b;
+	opacity:1;
+}
+
+.show-submenu-active{
+	background-color:rgba(255, 255, 255,0.05);	
+}
+
+.submenu-item-active{
+	opacity:1!important;
+	font-weight:400;
+	font-size:12px;
+}
+
+.submenu .fa-circle{
+	position:absolute;
+	left:217px!important;
+}
+
+.submenu li{
+	line-height:55px;
+	text-indent:18px;
+	font-size:11px;
+}
+
+.submenu li a{
+	opacity:0.5;
+}
+
+.submenu li i:first-child{
+	padding-right:30px;
+}
+
+.sidebar-menu li a:hover{
+	background-color:rgba(255, 255, 255,0.05);	
+}
+
+.sidebar-menu li a i:first-child{
+	width:13px;
+	margin-right:20px;
+	font-size:14px;
+	text-align:center;
+}
+
+.fa-last{
+	width:13px;
+	position:absolute;
+	left:232px;
+	font-size:8px;
+	text-align:center;
+	margin-top:25px;
+	opacity:0.5;
+}
+
+.sidebar-menu li a{
+	color:#FFFFFF;
+	padding-left:20px;
+	padding-right:30px;	
+}
+
+.list-block ul {
+    background: #fff0!important;
+}
+
+.list-block ul ul {
+    padding-left: 0px!important;
+}
+
+.info-box {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    height: 80px;
+    display: flex;
+    cursor: default;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.info-box .content .text {
+    font-size: 13px;
+    margin-top: 11px;
+    color: #555;
+}
+
+.bg-pink .content .text, .bg-pink .content .number {
+    color: #fff !important;
+}
+
+.bg-cyan {
+    background-color: #00BCD4 !important;
+    color: #fff;
+}
+
+.bg-light-green {
+    background-color: #8BC34A !important;
+    color: #fff;
+}
+
+.bg-light-green {
+    background-color: #8BC34A !important;
+    color: #fff;
+}
+.bg-orange {
+    background-color: #FF9800 !important;
+    color: #fff;
+}
+.info-box .content .number {
+    font-weight: normal;
+    font-size: 26px;
+    margin-top: -4px;
+    color: #555;
+}
+.info-box .icon i {
+    color: #fff;
+    font-size: 50px;
+    line-height: 80px;
+}
+
+.info-box .content {
+    display: inline-block;
+    padding: 7px 10px;
+}
+
+.info-box .icon {
+    display: inline-block;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.12);
+    width: 80px;
+}
+
+.bg-pink {
+    background-color: #E91E63 !important;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.no-border::before {
+	background: none!important;
+}
+.button.button-fill {
+    background: #fff;
+    color: #000!important;
+}
+
+
+#imagesetting{
+	background-image: url(../img/oroginal_logo.png);
+	background-position: center;
+	/*background-size: cover;*/
+	color: #FFFFFF;
+	padding: 32px 15px;
+	text-align: center;
+}
+
+/*.navbar-inner, .toolbar-inner {*/
+	/*background-image: -webkit-linear-gradient(-30deg, #052157 0%, #91039f 100%);*/
+/*}*/
+/*===============================================*/
+/* 01. COVER PAGE	 						     */
+/*===============================================*/
+
+#app-cover {
+	background-image: url(../img/bg-cover1.jpg);
+	background-position: center;
+	/*background-size: cover;*/
+	color: #FFFFFF;
+	padding: 32px 15px;
+	text-align: center;
+}
+
+.app-cover-content {
+	padding-top: 00px;
+}
+.imgContPage	{
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 25px;
+	padding-right: 25px;	
+	margin: 25px;
+}
+
+.list-blockhash{
+
+    margin: 50px 50px 30px 50px;
+    font-size: 17px;
+
+}
+/*.panel{background: #ffffff;}*/
+.samosalogin{
+  	margin: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 00px;
+}
+.samosa {
+    margin: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 70px;
+}
+
+/*===============================================*/
+/* 02. LOGIN & REGISTRE & REMEMBER PASSWORD	     */
+/*===============================================*/
+
+
+/*.page-top-cover {
+	width: 100%;
+	height: 270px;
+	background-image: url(../img/oroginal_logo.png);
+	background-position: center;
+	padding: 20px;
+
+}*/
+
+.navbar-no-color {
+	background: transparent!important;
+}
+
+.input-icon  {
+	margin-bottom:0px!important;
+}
+
+.input-icon i:before {
+	font-size:26px!important;
+}
+
+.btn-form-group {
+	padding: 0px 15px;
+}
+
+.recover-password {
+	padding: 0px 30px;
+}
+
+.icon-recover i:before {
+	font-size: 70px;
+}
+
+.back-close-icon i:before {
+	font-size: 22px;
+}
+
+
+/*===============================================*/
+/* 03. LEFT MENU	 						     */
+/*===============================================*/
+
+.left-menu-profile i:before {
+	font-size: 18px!important;
+}
+
+.left-menu-profile input[type="text"] {
+	border: 0px;
+	background: #EFEFEF;
+	width: 100%;
+	height: 26px;
+	text-align: center;
+	border-radius: 3px;
+	font-family: "Montserrat"!important;
+}
+
+.left-menu-profile .icon-location i:before {
+	font-size: 10px!important;
+}
+
+.list-menu {
+	margin: 30px 0px!important;
+}
+
+.list-menu i:before {
+	font-size: 20px!important;
+}
+
+/*===============================================*/
+/* 04. WALKTHROUGH	 						     */
+/*===============================================*/
+
+.walkthrough-icon {
+	width: 100px;
+	height: 100px;
+	margin: 60px auto 40px;
+}
+
+.walkthrough-item {
+	padding: 0px 15px;
+}
+
+.slick-dots li button::before {
+	font-size: 20px!important
+}
+
+.slick-dots li {
+    margin: 0 3px!important;
+}
+
+.navbar-fixed .page-content, .navbar-through .page-content {
+    padding-top:25px!important;
+    padding-right:25px!important;
+    padding-bottom:25px!important;
+    padding-left:25px!important;
+   background-image: -webkit-linear-gradient(-30deg, #052157 0%, #91039f 100%); 
+}
+
+.gradiantos{
+	padding-top: 15px!important;
+   background-image: -webkit-linear-gradient(-30deg, #052157 0%, #91039f 100%)!important; 
+}
+
+.row {
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }

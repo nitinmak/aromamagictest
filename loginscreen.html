@@ -1,61 +1,68 @@
-
+<!-- Top Navbar-->
 <div class="navbar">
-    <div class="navbar-inner">
+    <div class="navbar-inner" >
         <div class="left">
-            <a href="#" class="back link">
+            <a href="#" class="back link color-white">
                 <i class="icon icon-back"></i>
                 <span>Back</span>
             </a>
         </div>
-        <div class="center sliding">Aroma Login</div>
-        <div class="right">
+        <div class="center sliding color-white">Aroma Login</div>
+        <!-- <div class="right">
             <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
-        </div>
+        </div> -->
     </div>
 </div>
-
-<div class="page" ="page" id="login">
-
-  <!-- login header -->
-        <div data-theme="a" data-role="header">
-            <h3>login form</h3>
-        </div>
-
-  <!-- login form -->
-        <div data-role="content">
-            <label for="username">username</label>
-            <input type="text" value="" name="username" id="username"/>
-            <label for="password">password</label>
-            <input type="password" value="" name="password" id="password"/>  
-            <a data-role="button" id="login-button" data-theme="b">Login</a>
-        </div>
-
-  <!-- login footer -->
-        <div data-theme="a" data-role="footer" data-position="fixed">
-    <h3>witr.net</h3>
-  </div>
-
+<div class="pages">
+    <div data-page="loginscreen" class="page">
+        <div class="page-content">
+                    <div class="page-content text-center login-back">
+                
+                  <div class="page-top-cover">
+                     <div data-role="content" class="imgContPage">
+                        <img src="img/oroginal_logo.png" style="width: 100%; height: 100%;">
+                      </div>
+                  </div>
+                  <form class="">
+                    <div class="list-block margin-bottom-30 samosalogin inputs-list">
+                      <ul class="no-border">    
+                      <li>
+                        <div class="item-content">
+                        <div class="input-icon item-media"><i class="flaticon-email"></i></div>
+                        <div class="item-inner no-margin">
+                          <div class="item-input item-input-field">
+                          <input type="email" class="text-thiny" placeholder="E-mail">
+                          </div>
+                        </div>
+                                
+                        </div>
+                      </li>
+                      
+                      <li>
+                        <div class="item-content">
+                        <div class="input-icon item-media"><i class="flaticon-key"></i></div>
+                        <div class="item-inner no-margin">
+                          <div class="item-input item-input-field">
+                          <input type="text" class="text-thiny" placeholder="Password">
+                          </div>
+                        </div>
+                        
+                        </div>
+                      </li>
+                      </ul>
+                       <a href="#" class="text-underline text-extrat-thiny gray-text">Forget your Password ?</a>
+                    </div>
+                    <div class="row btn-form-group margin-bottom-10">
+                      <div class="col-100">
+                        <a href="homepage.html" class="button button-fill text-thiny">Login in</a>
+                      </div>
+                    </div>
+                    <div class="text-center margin-bottom-15">
+                      <a href="registerpage.html" class="text-underline text-extrat-thiny gray-text">You don't have an account? Register now</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
     </div>
-
-    <!-- home page -->
-    <div data-role="page" id="index">
-
-  <!-- home pager header -->
-        <div data-theme="a" data-role="header">
-            <h3></h3>
-        </div>
-
-  <!-- home page body -->
-        <div data-role="content">
-            you are logged in
-        </div>
-
-  <!-- home page footer -->
-        <div data-theme="a" data-role="footer" data-position="fixed">
-            <h3>witr.net</h3>
-        </div>
-
-    </div>
-
-</body>
-
+</div>

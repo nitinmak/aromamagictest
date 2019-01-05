@@ -29,90 +29,159 @@
 	
     <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
     <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
-
-
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
 </head>
 
-<body class="mainbody" id='formx'>
+<body  class="theme-white">
     <!-- Status bar overlay for full screen mode (PhoneGap) -->
-   
+    <div class="statusbar-overlay"></div>
+
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <nav>
+    <div class="panel panel-left panel-reveal gradiantos">
+     
+     <div class="list-block list-menu "  style="margin-top: 0px;">
+		<div class="avtar" style="text-align:center;" >
+		<img src="menu\help.png" width="50%" ></img> 
+		</div>
+
+        <ul class="sidebar-menu">
+				<li id="tcenter">
+					<a href="homepage.html"  class="close-panel" ><i class="fa fa-home panel-close-panel"></i>Homepage<i class="fa fa-last fa-circle"></i></a>
+				</li>
+
+				<li>
+						<a href="#" class="show-submenu"><i class="fa fa-cog"></i>Features<i class="fa fa-last fa-plus"></i></a>
+					<ul class="submenu ">
+						<li>
+							<a class="close-panel" href="#"><i class="fa fa-pencil"></i>Typography<i class="fa fa-last fa-circle"></i></a></li>
+						<li>
+							<a href="features-jquery.html" class="show-submenu"><i class="fa fa-cog"></i>jQuery<i class="fa fa-last fa-circle"></i></a></li>
+						<li>
+							<a href="features-others.html" class="show-submenu"><i class="fa fa-question-circle"></i>Others<i class="fa fa-last fa-circle"></i></a></li>
+					</ul>
+				</li>
+
+				<li>
+						<a href="#" class="show-submenu"><i class="fa fa-picture-o"></i>Portfolio<i class="fa fa-last fa-plus"></i></a>
+					<ul class="submenu">
+
+						<li>
+							<a href="portfolio-adaptive.html"><i class="fa fa-navicon"></i>Adaptive<i class="fa fa-last fa-circle"></i></a></li>
+						<li>
+							<a href="portfolio-one.html"><i class="fa fa-photo"></i>One Project<i class="fa fa-last fa-circle"></i></a></li>
+						<li>
+							<a href="portfolio-two.html"><i class="fa fa-photo"></i>Two Projects<i class="fa fa-last fa-circle"></i></a></li>
+						<li>
+							<a href="portfolio-wide.html"><i class="fa fa-code"></i>Wide Projects<i class="fa fa-last fa-circle"></i></a></li>
+					</ul>
+				</li>
+
+				<li>
+						<a href="#" class="show-submenu"><i class="fa fa-camera"></i>Gallery<i class="fa fa-last fa-plus"></i></a>
+					<ul class="submenu">
+						<li>
+							<a href="gallery-square.html"><i class="fa fa-th-large"></i>Square Thumbs<i class="fa fa-last fa-circle"></i></a></li>
+						<li>
+							<a href="gallery-round.html"><i class="fa fa-th-large"></i>Round Thumbs<i class="fa fa-last fa-circle"></i></a></li>
+						<li>
+							<a href="gallery-wide.html"><i class="fa fa-code"></i>Wide Projects<i class="fa fa-last fa-circle"></i></a></li>
+					</ul>
+				</li>
+
+				<li>
+					<a href="contact.html"><i class="fa fa-envelope-o"></i>Contact<i class="fa fa-last fa-circle"></i></a>
+				</li>
+		</ul>
+     </div>
+ </div>
+</nav>
+
     <!-- Views -->
     <div class="views">
+    	<div class="pages">
         <!-- Your main view, should have "view-main" class -->
-        <div class="view view-main">
-            <!-- Top Navbar-->
-            <div class="navbar" >
-                <div class="navbar-inner">
-                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
-                    <div class="center sliding">Aroma Magic</div>
-                    <div class="right">
-                        <!--
-                          Right link contains only icon - additional "icon-only" class
-                          Additional "open-panel" class tells app to open panel when we click on this link
-                        -->
-                        <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
-                    </div>
-                </div>
-            </div>
-            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
-            <div class="pages navbar-through toolbar-through">
-                <!-- Page, "data-page" contains page name -->
-                <div data-page="index" class="page" id="xx">
-                    <!-- Scrollable page content -->
-                    <div class="page-content color-gray">
-                        <div class="content-block">
-                          <div class="app-cover-content">
-
-                            <div class="margin-bottom-60 text-center">
-                            	<img class="text-center" src="img/oroginal_logo.png"  alt="Aroma" width="auto" height="100">
-                            </div>
-							<div class="text-large margin-bottom-15">
-								Aroma Magic Helth
-							</div>
-							<div class="margin-bottom-50">
-								Aromatherapy is the science and art of utilizing naturally extracted aromatic essences from plants.
-							</div>
-							<div class="row footter">
-								<div class="col-50">
-									<a href="#" class="button button-fill color-white black-text text-thiny">Login in</a>
+	        <div class="view view-main" data-page="login">
+	            <!-- Top Navbar-->
+	            <div class="navbar navbar-no-color" >
+	                <div class="navbar-inner">
+	                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+	                    <div class="center sliding  color-white">Aroma Magic</div>
+	                    <!-- <div class="right">
+	                        
+	                          Right link contains only icon - additional "icon-only" class
+	                          Additional "open-panel" class tells app to open panel when we click on this link
+	                        
+	                        <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+	                    </div> -->
+	                </div>
+	            </div>
+	            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+	            <div class="pages navbar-through toolbar-through">
+	                <!-- Page, "data-page" contains page name -->
+	                <div data-page="index" class="page" id="xx">
+	                    <!-- Scrollable page content -->
+	                    <div class="page-content color-white">
+	                        <div class="content-block color-white">
+	                          <div class="app-cover-content color-white">
+ 									<div data-role="content" class="imgContPage">
+								    <img src="img/oroginal_logo.png" style="width: 100%; height: 100%;">
+								    </div>
+                     					<!-- <div class="margin-top-60 text-center" id="imagesetting">
+                                			<img class="text-center" src="img/oroginal_logo.png" alt="Aroma" style="width: 80%; height: auto;">
+                              			</div> -->
+                  					
+								<div class="text-large margin-bottom-15  margin-top-40">
+									Aroma Magic Helth
 								</div>
-								<div class="col-50">
-									<a href="#" class="button button-fill color-green text-thiny">Resgiter now</a>
+								<div class="margin-bottom-50">
+									Aromatherapy is the science and art of utilizing naturally extracted aromatic essences from plants.
+								</div> 
+								<div class="row footter">
+									<div class="col-50">
+										<a href="loginscreen.html" class="button button-fill ">Login in</a>
+									</div>
+									<div class="col-50">
+										<a href="registerpage.html" class="button button-fill ">Resgiter now</a>
+									</div>
 								</div>
-							</div>
-							<div class="row offset-top-15 margin-bottom-10">
-								<div class="col-100">
-									<a href="#" class="button button-fill color-blue white-text text-thiny">
-										How it Works
-									</a>
-								</div>
-							</div>
-							
-                        </div>
-                    </div>
-                            <!-- Link to another page -->
-                            <a href="about.html">About app</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Bottom Toolbar-->
-            <div class="toolbar">
-                <div class="toolbar-inner">
-                    <!-- Toolbar links -->
-                    <a href="#" class="link">Link 1</a>
-                    <a href="#" class="link">Link 2</a>
-                </div>
-            </div>
-        </div>
+								<div class="row offset-top-15 margin-bottom-10">
+									<div class="col-100">
+										<a href="#" class="button button-fill ">
+											How it Works
+										</a>
+									</div>
+								</div>								
+	                        </div>	                    
+	                            <!-- Link to another page -->
+	                            <a href="about.html"  class="close-panel" >About app</a>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <!-- Bottom Toolbar-->
+	          <!--   <div class="toolbar ">
+	                <div class="toolbar-inner">
+	                    <a href="#" class="link">Link 1</a>
+	                    <a href="#" class="link">Link 2</a>
+	                </div>
+	            </div> -->
+	        </div>
+	    </div>
     </div>
 	
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
     <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="js/jquery.js.download"></script>	
+	<script type="text/javascript" src="js/jqueryui.js.download"></script>
+	<script type="text/javascript" src="js/framework.plugins.js.download"></script>
+	<script type="text/javascript" src="js/custom.js.download"></script>
 	
 </body>
 

@@ -6,8 +6,9 @@ img {
 ================================================== */
 body {
 	font-family: "Montserrat"!important;
+    background: white!important;
+    
 }
-
 /* Titles */
 
 h1,
